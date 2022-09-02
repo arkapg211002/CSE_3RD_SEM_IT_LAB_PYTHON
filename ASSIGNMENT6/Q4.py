@@ -1,0 +1,21 @@
+'''
+Write a python program to Replace words from Dictionary.
+
+e.g. Input : test_str = ‘TechnoIndia is one of the best colleges in India ’, repl_dict = {“India” : “West Bengal”}
+
+Output : TechnoIndia is one of the best colleges in West Bengal
+
+Explanation : “India” word is replaced by lookup value.
+'''
+# test_str = 'TechnoIndia is one of the best colleges in India '
+# repl_dict = {'India':'West Bengal'}
+test_str=input("Enter the string: ")
+repl_dict={}
+n=int(input("Enter the number of elements in the dictionary: "))
+for i in range(n):
+    key=input("Enter the key: ")
+    value=input("Enter the value: ")
+    repl_dict[key]=value
+for key in repl_dict:
+    test_str=test_str.replace(key,repl_dict[key])
+print("The string is: ",test_str)

@@ -1,0 +1,5 @@
+1. Write a Python program to read first n lines of a file
+2. Write a Python program to count the number of lines in a text file. 
+3. Write a Python program to write a list to a file.
+4. Write a Python program to copy the contents of a file to another file .
+5. Write a Python program to take a file name and a string pattern from the user. Now print the number of occurrence of the pattern string found in the file.

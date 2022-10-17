@@ -1,4 +1,4 @@
-```C
+```c
 /*Write a program to perform binary search on an array of integers.*/
 #include<stdio.h>
 #include<stdlib.h>

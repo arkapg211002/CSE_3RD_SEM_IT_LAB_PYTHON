@@ -1,0 +1,63 @@
+## Histogram equalisation
+
+>ORIGINAL IMAGE
+
+![ORIGINAL IMAGE]()
+
+```python
+'''
+Write a Python script to read a gray-scale image and display it's Histogram.
+'''
+import cv2
+import numpy as np
+from matplotlib import pyplot as plt
+inputimg='image.jpg'
+grayimg=cv2.imread(inputimg,cv2.IMREAD_GRAYSCALE)
+cv2.imshow('Gray',grayimg)
+hist,bins=np.histogram(grayimg,256,[0,256])
+plt.hist(grayimg.ravel(),256,[0,256])
+plt.title('Gray')
+plt.show()
+while True:
+    k=cv2.waitKey(0) & 0xFF
+    if k==27:
+        break
+cv2.destroyAllWindows()
+```
+
+>Histogram
+
+![ORIGINAL HISTOGRAM]()
+
+```python
+import cv2
+import numpy
+from matplotlib import pyplot as plt
+inputImg = 'image.jpg'
+img = cv2.imread(inputImg)
+img_to_yuv = cv2.cvtColor(img,cv2.COLOR_BGR2YUV)
+img_to_yuv[:,:,0] = cv2.equalizeHist(img_to_yuv[:,:,0])
+hist_equalization_result = cv2.cvtColor(img_to_yuv, 
+cv2.COLOR_YUV2BGR)
+outputImg = 'result.jpg'
+cv2.imwrite(outputImg, hist_equalization_result)
+outputimg=cv2.imread(outputImg)
+cv2.imshow('Gray',outputimg)
+hist,bins=numpy.histogram(outputimg,256,[0,256])
+plt.hist(outputimg.ravel(),256,[0,256])
+plt.title('Enhanced')
+plt.show()
+while True:
+    k=cv2.waitKey(0) & 0xFF
+    if k==27:
+        break
+cv2.destroyAllWindows()
+```
+
+>Enhanced Image
+
+![Enhaned Image]()
+
+>New Histogram
+
+![New Histogram]()

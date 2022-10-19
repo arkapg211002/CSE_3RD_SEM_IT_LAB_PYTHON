@@ -2,11 +2,11 @@
 
 >ORIGINAL IMAGE
 
-![ORIGINAL IMAGE]()
+![ORIGINAL IMAGE](https://github.com/arkapg211002/CSE_3RD_SEM_IT_LAB_PYTHON/blob/main/histogram_equalisation/image.jpg)
 
 ```python
 '''
-Write a Python script to read a gray-scale image and display it's Histogram.
+Question 1
 '''
 import cv2
 import numpy as np
@@ -27,9 +27,10 @@ cv2.destroyAllWindows()
 
 >Histogram
 
-![ORIGINAL HISTOGRAM]()
+![ORIGINAL HISTOGRAM](https://github.com/arkapg211002/CSE_3RD_SEM_IT_LAB_PYTHON/blob/main/histogram_equalisation/2022-10-19%20(3).png)
 
 ```python
+'''Question 2'''
 import cv2
 import numpy
 from matplotlib import pyplot as plt
@@ -56,8 +57,8 @@ cv2.destroyAllWindows()
 
 >Enhanced Image
 
-![Enhaned Image]()
+![Enhaned Image](https://github.com/arkapg211002/CSE_3RD_SEM_IT_LAB_PYTHON/blob/main/histogram_equalisation/result.jpg)
 
 >New Histogram
 
-![New Histogram]()
+![New Histogram](https://github.com/arkapg211002/CSE_3RD_SEM_IT_LAB_PYTHON/blob/main/histogram_equalisation/2022-10-19%20(5).png)

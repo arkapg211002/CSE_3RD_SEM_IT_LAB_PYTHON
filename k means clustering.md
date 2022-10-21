@@ -39,4 +39,4 @@ plt.show()
 
 
 ```
-![output]()
+![output](https://github.com/arkapg211002/CSE_3RD_SEM_IT_LAB_PYTHON/blob/main/2022-10-21%20(3).png)
